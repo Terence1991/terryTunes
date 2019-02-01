@@ -1,11 +1,13 @@
 import React from 'react'
-
+import {connect} from 'react-redux'
 
 const App = () => {
 return (
-  <div>App</div>
+  <div>
+    <songList />
+  </div>
 )
 }
 
 
-export default App;
+export default connect()(App);
