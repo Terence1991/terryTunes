@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 
 class SongList extends React.Component {
   renderList() {
-    return this.props.map((song) => {
+    return this.props.songs.map((song) => {
      return <div className="item" key={song.title}>
      <div className="right floated content">
      <button className='ui button primary'>select</button>
@@ -16,7 +16,7 @@ class SongList extends React.Component {
   }
   
   render() {
-    return <div>Song List</div>
+    return <div className="ui dividied list">{this.renderList()}t</div>
   }
 
 }
