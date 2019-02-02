@@ -1,10 +1,11 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import SongList from './SongList.js'
 
 const App = () => {
 return (
   <div>
-    <songList />
+    <SongList />
   </div>
 )
 }
