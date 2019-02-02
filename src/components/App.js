@@ -9,5 +9,9 @@ return (
 )
 }
 
+const mapStateToProps = (state) => {
+    console.log(state)
+    return state;
+}
 
-export default connect()(App);
+export default connect(mapStateToProps)(App);
