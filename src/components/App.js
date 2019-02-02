@@ -1,5 +1,5 @@
 import React from 'react'
-import {connect} from 'react-redux'
+
 import SongList from './SongList.js'
 
 const App = () => {
@@ -10,8 +10,5 @@ return (
 )
 }
 
-const mapStateToProps = (state) => {
-    return {songs: state.songs};
-}
 
-export default connect(mapStateToProps)(App);
+export default App
