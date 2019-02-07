@@ -11,11 +11,11 @@ const songsReducer = () => {
 }
 
 
-const selectSongReducer = (selectedSong = null, action) => {
+const selectSongReducer = (selectSong = null, action) => {
     if (action.type === 'SONG_SELECTED') {
       return action.payLoad
     } else {
-      return selectedSong
+      return selectSong
     }
 }
 

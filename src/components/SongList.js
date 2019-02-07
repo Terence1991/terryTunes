@@ -9,7 +9,7 @@ class SongList extends React.Component {
     return this.props.songs.map((song) => {
      return <div className="item" key={song.title}>
      <div className="right floated content">
-     <button onClick={() => this.props.selectSong()} className='ui button primary'>select</button>
+     <button onClick={() => this.props.selectSong(song)} className='ui button primary'>select</button>
      </div>
      <div>{song.title}</div>
      </div>
@@ -17,7 +17,7 @@ class SongList extends React.Component {
   }
   
   render() {
-    console.log(this.props)
+
     return <div className="ui dividied list">{this.renderList()}t</div>
   }
 
