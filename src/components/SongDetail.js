@@ -23,4 +23,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, )(SongDetail)
+export default connect(mapStateToProps,)(SongDetail)

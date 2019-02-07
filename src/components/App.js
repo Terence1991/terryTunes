@@ -11,7 +11,7 @@ return (
     <SongList />
   </div>
   <div className='column eight wide'>
-    <SongList />
+    <SongDetail/>
   </div>
   </div>
   </div>
